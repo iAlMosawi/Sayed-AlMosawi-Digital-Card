@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#071c14">
+<title>Digital Card Manager | Sayed AlMosawi</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#061810;color:#f5fff8;font:15px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}.wrap{max-width:1100px;margin:28px auto;padding:18px}.panel{background:linear-gradient(150deg,#123c2a,#071810 58%);border:1px solid #2d6046;border-radius:24px;padding:24px;box-shadow:0 20px 60px #0008}h1,h2{margin:0 0 7px}.muted{color:#afc4b7}.section{margin-top:22px;padding-top:18px;border-top:1px solid #28503c}.grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.full{grid-column:1/-1}label{display:block;color:#68e38f;font-size:12px;font-weight:700;margin-bottom:5px}input,textarea,select{width:100%;border:1px solid #35614a;border-radius:10px;background:#0d291d;color:#fff;padding:11px;font:inherit}input[type=color]{height:46px;padding:4px}input[type=file]{padding:8px}textarea{min-height:82px}.assets{display:grid;grid-template-columns:1fr 1fr;gap:14px}.asset{padding:14px;border:1px solid #315a45;border-radius:14px;background:#0b2519}.asset img{width:100%;height:140px;object-fit:contain;background:#fff;border-radius:10px;margin-bottom:10px}.asset .portrait{object-fit:cover}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}button,a.btn{border:1px solid #43cf73;border-radius:12px;background:#27994b;color:#fff;padding:12px 16px;font-weight:700;text-decoration:none;cursor:pointer}.secondary{background:#163d2a!important;border-color:#35614a!important}.note{margin-top:18px;padding:14px;border-radius:12px;background:#102b1f;color:#c7d8cd;font-size:13px}.colors{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}@media(max-width:700px){.grid,.assets,.colors{grid-template-columns:1fr}.full{grid-column:auto}.wrap{margin:0;padding:10px}.panel{padding:18px}}
+</style></head><body><main class="wrap"><section class="panel">
+<h1>Digital Card Manager</h1><div class="muted">Complete management panel for the public contact card and Apple Wallet card data.</div>
+
+<div class="section"><h2>Identity</h2><div class="grid">
+<div><label>ENGLISH NAME</label><input id="name" value="Sayed Ahmed AlMosawi"></div><div><label>ARABIC NAME</label><input id="arabic" dir="rtl" value="السيد أحمد الموسوي"></div>
+<div><label>JOB TITLE</label><input id="role" value="L3 Cloud Engineer"></div><div><label>COMPANY</label><input id="company" value="Kalaam Telecom"></div>
+<div><label>LOCATION</label><input id="location" value="Bahrain"></div><div><label>ORGANIZATION / DEPARTMENT</label><input id="department" value="Cloud Engineering"></div>
+<div class="full"><label>SKILLS / DESCRIPTION</label><textarea id="bio">Cloud Infrastructure · Virtualization · Microsoft 365 · Cybersecurity · Enterprise IT Solutions</textarea></div>
+</div></div>
+
+<div class="section"><h2>Contact & Links</h2><div class="grid">
+<div><label>MOBILE</label><input id="mobile" value="+97336695858"></div><div><label>WHATSAPP</label><input id="whatsapp" value="+97336695858"></div>
+<div><label>WORK PHONE</label><input id="work" value="+97316168689"></div><div><label>WORK EMAIL</label><input id="email" value="a.almoosawi@kalaam-telecom.com"></div>
+<div><label>WEBSITE</label><input id="website" value="https://ialmosawi.com"></div><div><label>LINKEDIN</label><input id="linkedin" value="https://www.linkedin.com/in/sayedahmedalmosawi/"></div>
+<div class="full"><label>PUBLIC CARD / QR DESTINATION</label><input id="cardUrl" value="https://ialmosawi.github.io/Sayed-AlMosawi-Digital-Card/"></div>
+</div></div>
+
+<div class="section"><h2>Logo & Photo</h2><div class="assets">
+<div class="asset"><img id="logoPreview" src="../assets/kalaam-logo.png" alt="Logo preview"><label>COMPANY LOGO</label><input id="logoFile" type="file" accept="image/png,image/jpeg,image/webp" onchange="previewFile(this,'logoPreview')"><label style="margin-top:8px">CURRENT ASSET PATH</label><input id="logoPath" value="assets/kalaam-logo.png"></div>
+<div class="asset"><img class="portrait" id="portraitPreview" src="../assets/portrait.jpg" alt="Portrait preview"><label>PROFILE PHOTO</label><input id="portraitFile" type="file" accept="image/png,image/jpeg,image/webp" onchange="previewFile(this,'portraitPreview')"><label style="margin-top:8px">CURRENT ASSET PATH</label><input id="portraitPath" value="assets/portrait.jpg"></div>
+</div></div>
+
+<div class="section"><h2>Card Colors</h2><div class="colors">
+<div><label>BACKGROUND</label><input id="backgroundColor" type="color" value="#071810"></div>
+<div><label>CARD / SECONDARY</label><input id="cardColor" type="color" value="#123c2a"></div>
+<div><label>ACCENT / KALAAM GREEN</label><input id="accentColor" type="color" value="#40c96b"></div>
+<div><label>TEXT</label><input id="textColor" type="color" value="#f5fff8"></div>
+<div><label>MUTED TEXT</label><input id="mutedColor" type="color" value="#afc4b7"></div>
+<div><label>BORDER</label><input id="borderColor" type="color" value="#2d6046"></div>
+</div></div>
+
+<div class="section"><h2>Apple Wallet</h2><div class="grid">
+<div><label>PASS TYPE IDENTIFIER</label><input id="passTypeIdentifier" value="pass.Sayed.AlMosawiDigital.Business.Card"></div>
+<div><label>TEAM IDENTIFIER</label><input id="teamIdentifier" value="GJ4AP2CYA7"></div>
+<div><label>SERIAL NUMBER</label><input id="serialNumber" value="sayed-almosawi-business-card-003"></div>
+<div><label>ORGANIZATION NAME</label><input id="organizationName" value="Sayed Ahmed AlMosawi"></div>
+<div class="full"><label>PASS DESCRIPTION</label><input id="passDescription" value="Sayed Ahmed AlMosawi Digital Business Card"></div>
+<div><label>QR LABEL</label><input id="qrLabel" value="View & Save Contact"></div>
+<div><label>WALLET UPDATE SERVICE URL</label><input id="webServiceURL" placeholder="Configure later when secure backend is ready"></div>
+</div></div>
+
+<div class="section"><h2>Contact File</h2><div class="grid">
+<div><label>VCARD FILE NAME</label><input id="vcardFile" value="sayed-almosawi.vcf"></div>
+<div><label>NOTES</label><input id="notes" value="WhatsApp contact"></div>
+</div></div>
+
+<div class="actions"><button onclick="downloadJSON()">Export Full Card Data</button><button class="secondary" onclick="downloadVCF()">Export Contact .vcf</button><button class="secondary" onclick="downloadPassJSON()">Export Wallet pass.json</button><a class="btn secondary" href="../">View Public Card</a></div>
+<div class="note"><b>Security:</b> image selection is previewed locally and exported configuration contains the selected file names only; browser-selected files are never uploaded automatically. This static GitHub Pages panel intentionally contains no GitHub token, Apple certificate, private key, or password. After authentication and a secure publishing backend are connected, these same controls can become Save &amp; Publish controls.</div>
+</section></main>
+<script>
+const fields=['name','arabic','role','company','location','department','bio','mobile','whatsapp','work','email','website','linkedin','cardUrl','logoPath','portraitPath','backgroundColor','cardColor','accentColor','textColor','mutedColor','borderColor','passTypeIdentifier','teamIdentifier','serialNumber','organizationName','passDescription','qrLabel','webServiceURL','vcardFile','notes'];
+function val(id){return document.getElementById(id).value.trim()} function data(){const d=Object.fromEntries(fields.map(id=>[id,val(id)]));d.logoFile=document.getElementById('logoFile').files[0]?.name||'';d.portraitFile=document.getElementById('portraitFile').files[0]?.name||'';return d}
+function previewFile(i,id){const f=i.files[0];if(f){const u=URL.createObjectURL(f);document.getElementById(id).src=u}}
+function save(blob,name){const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(a.href),800)}
+function downloadJSON(){save(new Blob([JSON.stringify(data(),null,2)],{type:'application/json'}),'card-data.json')}
+function downloadVCF(){const d=data(),p=d.name.split(/\s+/),last=p.pop()||'',first=p.join(' '),v=['BEGIN:VCARD','VERSION:3.0','N:'+last+';'+first+';;;','FN:'+d.name,'ORG:'+d.company,'TITLE:'+d.role,'TEL;TYPE=CELL,VOICE:'+d.mobile,'TEL;TYPE=WORK,VOICE:'+d.work,'EMAIL;TYPE=WORK:'+d.email,'URL:'+d.website,'URL;TYPE=LinkedIn:'+d.linkedin,'ADR;TYPE=WORK:;;;;;;'+d.location,'NOTE:'+d.arabic+' | WhatsApp: '+d.whatsapp,'END:VCARD'].join('\r\n');save(new Blob([v],{type:'text/vcard'}),d.vcardFile||'contact.vcf')}
+function downloadPassJSON(){const d=data(),pass={formatVersion:1,passTypeIdentifier:d.passTypeIdentifier,serialNumber:d.serialNumber,teamIdentifier:d.teamIdentifier,organizationName:d.organizationName,description:d.passDescription,foregroundColor:hexRgb(d.textColor),backgroundColor:hexRgb(d.backgroundColor),labelColor:hexRgb(d.accentColor),generic:{primaryFields:[{key:'name',label:d.name.toUpperCase(),value:d.name}],secondaryFields:[{key:'title',label:'ROLE',value:d.role}],auxiliaryFields:[{key:'company',label:'COMPANY',value:d.company},{key:'location',label:'LOCATION',value:d.location}],backFields:[{key:'arabicName',label:'الاسم',value:d.arabic},{key:'mobile',label:'Mobile / WhatsApp',value:d.mobile},{key:'work',label:'Work Phone',value:d.work},{key:'email',label:'Work Email',value:d.email},{key:'website',label:'Website',value:d.website},{key:'linkedin',label:'LinkedIn',value:d.linkedin},{key:'card',label:'Digital Business Card / Save Contact',value:d.cardUrl}]},barcodes:[{format:'PKBarcodeFormatQR',message:d.cardUrl,messageEncoding:'iso-8859-1',altText:d.qrLabel}]};if(d.webServiceURL)pass.webServiceURL=d.webServiceURL;save(new Blob([JSON.stringify(pass,null,2)],{type:'application/json'}),'pass.json')}
+function hexRgb(h){const n=parseInt(h.slice(1),16);return 'rgb('+((n>>16)&255)+','+((n>>8)&255)+','+(n&255)+')'}
+</script></body></html>
