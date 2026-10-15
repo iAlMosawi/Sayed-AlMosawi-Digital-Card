@@ -1,0 +1,38 @@
+{
+  "formatVersion": 1,
+  "passTypeIdentifier": "pass.Sayed.AlMosawiDigital.Business.Card",
+  "serialNumber": "sayed-almosawi-business-card-001",
+  "teamIdentifier": "GJ4AP2CYA7",
+  "organizationName": "Sayed Ahmed AlMosawi",
+  "description": "Sayed Ahmed AlMosawi Digital Business Card",
+  "logoText": "Kalaam Telecom",
+  "foregroundColor": "rgb(255,255,255)",
+  "backgroundColor": "rgb(10,35,29)",
+  "labelColor": "rgb(80,210,125)",
+  "generic": {
+    "primaryFields": [{"key":"name","label":"L3 CLOUD ENGINEER","value":"Sayed Ahmed AlMosawi"}],
+    "secondaryFields": [
+      {"key":"company","label":"COMPANY","value":"Kalaam Telecom"},
+      {"key":"location","label":"LOCATION","value":"Bahrain"}
+    ],
+    "auxiliaryFields": [
+      {"key":"mobile","label":"MOBILE","value":"+973 3669 5858"},
+      {"key":"email","label":"EMAIL","value":"a.almoosawi@kalaam-telecom.com"}
+    ],
+    "backFields": [
+      {"key":"arabicName","label":"Arabic Name","value":"السيد أحمد الموسوي"},
+      {"key":"mobileBack","label":"Mobile / WhatsApp","value":"+973 3669 5858"},
+      {"key":"work","label":"Work Phone","value":"+973 1616 8689"},
+      {"key":"emailBack","label":"Work Email","value":"a.almoosawi@kalaam-telecom.com"},
+      {"key":"website","label":"Website","value":"https://ialmosawi.com"},
+      {"key":"linkedin","label":"LinkedIn","value":"https://www.linkedin.com/in/sayedahmedalmosawi/"},
+      {"key":"contact","label":"Digital Business Card / Save Contact","value":"https://ialmosawi.github.io/Sayed-AlMosawi-Digital-Card/"}
+    ]
+  },
+  "barcodes": [{
+    "format":"PKBarcodeFormatQR",
+    "message":"https://ialmosawi.github.io/Sayed-AlMosawi-Digital-Card/",
+    "messageEncoding":"iso-8859-1",
+    "altText":"View & Save Contact"
+  }]
+}
