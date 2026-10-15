@@ -1,0 +1,7 @@
+*.p12
+*.pfx
+*.key
+*.pem
+*.pkpass
+manifest.json
+signature
